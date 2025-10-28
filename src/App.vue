@@ -14,6 +14,7 @@ import Toast from './components/Toast.vue'
 <style>
 .app-root{
   min-height:100vh;
-  background: #f7f9fc;
+  /* make transparent so `body` background shows through */
+  background: transparent;
 }
 </style>

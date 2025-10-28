@@ -4,12 +4,12 @@
       <div class="brand" @click="$router.push('/')">TicketApp</div>
       <nav class="nav-links">
         <!-- Home link visible to everyone -->
-        <button class="btn ghost" @click="$router.push('/')">Home</button>
+        <button class="btn blue pill" @click="$router.push('/')">Home</button>
         <button v-if="!logged" class="btn ghost" @click="$router.push('/auth/login')">Login</button>
         <button v-if="!logged" class="btn primary" @click="$router.push('/auth/signup')">Get Started</button>
         <div v-if="logged" class="nav-auth">
-          <button class="btn ghost" @click="$router.push('/dashboard')">Dashboard</button>
-          <button class="btn ghost" @click="$router.push('/tickets')">Tickets</button>
+          <button class="btn blue pill" @click="$router.push('/dashboard')">Dashboard</button>
+          <button class="btn blue pill" @click="$router.push('/tickets')">Tickets</button>
           <button class="btn danger" @click="doLogout">Logout</button>
         </div>
       </nav>
